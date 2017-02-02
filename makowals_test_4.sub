@@ -1,0 +1,20 @@
+# Required for remote HTCondor-CE submission
+universe = grid
+x509userproxy = /afs/cern.ch/user/m/mlisowsk/.globus/voms_proxy
+grid_resource = condor ce503.cern.ch ce503.cern.ch:9619
+
+# Files
+executable = launcher4.py
+output = makowals_test_4.out
+error = makowals_test_4.err
+log = makowals_test_4.log
+
+# File transfer behavior
+ShouldTransferFiles = YES
+WhenToTransferOutput = ON_EXIT_OR_EVICT
+# transfer_input_files = example.condor
+# transfer_output_files = output.file
+
+# Run job once
+# arguments="--input example.condor --output output.file"
+queue
