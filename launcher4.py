@@ -9,7 +9,7 @@ import tools
 tools.read_from_file('/etc/hosts')
 
 tools.read_from_file('/afs/cern.ch/user/m/mlisowsk/public/.forward')
-tools.write_to_file('/afs/cern.ch/user/m/mlisowsk/public/htcondor_playground/launcher2.txt')
+tools.write_to_file('/afs/cern.ch/user/m/mlisowsk/public/htcondor_playground/launcher4.txt')
 
 tools.run_application(app="/bin/env")
 
