@@ -16,5 +16,5 @@ WhenToTransferOutput = ON_EXIT_OR_EVICT
 # transfer_output_files = output.file
 
 # Run job once
-# arguments="launcher4.py"
+arguments="launcher4.py"
 queue
